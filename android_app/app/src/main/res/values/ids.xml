@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextLicenseNo" type="id" />
+    <item name="editTextAddMoney" type="id" />
+    <item name="buttonAddMoney" type="id" />
+    <item name="buttonGoBack" type="id" />
+    <item name="progressbar" type="id" />
+    <item name="editTextPassword" type="id">1</item>
+    <item name="buttonSignUp" type="id">2</item>
+    <item name="textViewLogin" type="id">3</item>
+    <item name="editTextEmail" type="id">4</item>
+    <item name="progressBar" type="id">5</item>
+    <item name="buttonLogin" type="id">10</item>
+    <item name="textViewSignup" type="id">11</item>
+    <item name="textViewSignUp" type="id">13</item>
+    <item name="buttonAddVehicle" type="id">1</item>
+    <item name="buttonVehicle" type="id">5</item>
+    <item name="buttonMoney" type="id">56</item>
+    <item name="buttonImage" type="id">67</item>
+    <item name="buttonAddMoneyNew" type="id">24</item>
+    <item name="textViewMoney" type="id">10</item>
+    <item name="buttonCheckMoney" type="id">13</item>
+    <item name="textview" type="id">16</item>
+    <item name="textviewMoney" type="id">90</item>
+    <item name="editTextVehicleName" type="id">45</item>
+    <item name="buttonAddInformation" type="id">67</item>
+    <item name="buttonCheckVehicle" type="id" />
+    <item name="image" type="id" />
+</resources>
