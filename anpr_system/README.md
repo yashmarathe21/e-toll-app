@@ -9,4 +9,5 @@
 3. Install all pip dependencies `pip install -r requirements.dev.txt`
 4. Make a copy of the .env.sample and rename to .env
 5. Install tesseract using `sudo apt-get install tesseract-ocr`
-6. Install tkinter for Ubuntu using `sudo apt-get install python3-tk`
+6. Install tkinter using `sudo apt-get install python3-tk`
+7. Add Firebase Details in .env file
