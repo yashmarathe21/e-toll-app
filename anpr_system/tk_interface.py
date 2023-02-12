@@ -20,6 +20,7 @@ TITLE = "ANPR System"
 DISPLAY_IMAGE_WIDTH = 700
 DISPLAY_IMAGE_HEIGHT = 450
 
+
 def stream_video_in_tkinter_label(label: Label, video):
     for image in video.iter_data():
         frame_image = ImageTk.PhotoImage(
@@ -30,15 +31,18 @@ def stream_video_in_tkinter_label(label: Label, video):
         label.config(image=frame_image)
         label.image = frame_image
         label.place(x=50, y=175, height=DISPLAY_IMAGE_HEIGHT, width=DISPLAY_IMAGE_WIDTH)
-        
+
+
 def extract_and_display_number_plate(video_path: str) -> None:
-    number_plate_img = anpr_system.extract_number_plate_from_video_path(video_path=video_path)
-    
+    number_plate_img = anpr_system.extract_number_plate_from_video_path(
+        video_path=video_path
+    )
+
     if number_plate_img is None:
         return
-    
+
     (text, img_path) = number_plate_img
-    
+
     lbl = Label(
         root,
         text="Detected Number Plate",
@@ -73,12 +77,16 @@ def video():
 
     my_label = tk.Label(root)
     my_label.pack()
-    thread = threading.Thread(target=stream_video_in_tkinter_label, args=(my_label, video))
+    thread = threading.Thread(
+        target=stream_video_in_tkinter_label, args=(my_label, video)
+    )
     thread.daemon = 2
     thread.start()
 
     button2 = Button(
-        root, text="Find the number plate", command=lambda: extract_and_display_number_plate(video_name)
+        root,
+        text="Find the number plate",
+        command=lambda: extract_and_display_number_plate(video_name),
     )
     button2.place(x=150, y=700, height=50, width=500)
 

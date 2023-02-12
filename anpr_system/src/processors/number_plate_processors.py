@@ -9,7 +9,7 @@ from PIL import Image
 from src.processors import image_processors
 
 ###################################################################
-# Number Plate processing functions 
+# Number Plate processing functions
 ###################################################################
 
 
