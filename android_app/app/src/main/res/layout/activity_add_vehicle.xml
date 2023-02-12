@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:inputType="text"
+            android:hint="Enter license plate no"
+            android:paddingBottom="15.0dip"
+            android:id="@id/editTextLicenseNo"
+            android:textColorHint="@color/colorBlack"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:inputType="text"
+            android:hint="Enter vehicle name"
+            android:paddingBottom="15.0dip"
+            android:id="@id/editTextVehicleName"
+            android:textColorHint="@color/colorBlack"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@id/buttonAddInformation"
+            android:textAllCaps="false"
+            android:text="Add Information"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="100.0dip"
+            android:id="@id/buttonGoBack"
+            android:textAllCaps="false"
+            android:text="Go Back?"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+        <ProgressBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@id/progressbar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+</LinearLayout>

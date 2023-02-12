@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:inputType="text"
+            android:hint="Enter your License No"
+            android:paddingBottom="15.0dip"
+            android:id="@id/editTextLicenseNo"
+            android:textColorHint="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20.0dip"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@id/buttonCheckVehicle"
+            android:textAllCaps="false"
+            android:text="Find the detected vehicle"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+</LinearLayout>

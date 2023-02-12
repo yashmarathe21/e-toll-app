@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textAllCaps="false"
+            android:text="Add Vehicle"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:id="@id/buttonAddVehicle"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textAllCaps="false"
+            android:text="Add Money"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:id="@id/buttonAddMoneyNew"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+
+    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textAllCaps="false"
+            android:text="Money in your account"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:id="@id/buttonMoney"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textAllCaps="false"
+            android:text="Check detected vehicle"
+            android:layout_margin="7.0dip"
+            android:background="@drawable/rounded_button_transparent"
+            android:id="@id/buttonImage"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"/>
+
+</LinearLayout>
