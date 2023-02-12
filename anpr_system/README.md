@@ -1,6 +1,8 @@
-# Endimension COommon Webhook Django Service
+# ANPR System for an E-Toll-App
 
 ## Dev setup
+
+### For Ubuntu - 
 
 1. Clone repo
 2. Create python venv `python3 -m venv venv`
