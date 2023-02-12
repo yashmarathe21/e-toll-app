@@ -1,0 +1,5 @@
+-r requirements.txt
+
+black==22.10.0
+mypy
+pre-commit==2.12.1

@@ -1,0 +1,10 @@
+opencv-python==4.7.0.68
+Pillow==9.4.0
+numpy==1.24.2
+pytesseract==0.3.10
+pyrebase==3.0.27
+firebase==3.0.1
+firebase_admin==6.1.0
+imageio==2.25.0
+imageio-ffmpeg==0.4.8
+python-dotenv==0.21.1
