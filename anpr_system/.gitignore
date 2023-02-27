@@ -8,5 +8,9 @@ env.bak/
 venv.bak/
 jsons/
 tmp/
+
+# Cache
 __pycache__/
 .pytest_cache/
+*.py[cod]
+*$py.class
