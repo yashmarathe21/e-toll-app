@@ -10,7 +10,9 @@ from utils import validators
 ###################################################################
 
 
-def extract_number_plate_from_image_path(image_path: str) -> Optional[Tuple[str, str]]:
+def extract_number_plate_from_image_path(
+    image_path: str,
+) -> Tuple[str, Optional[str]]:
     img = cv2.imread(image_path)
 
     scale_percent = 60  # percent of original size
@@ -34,6 +36,8 @@ def extract_number_plate_from_image_path(image_path: str) -> Optional[Tuple[str,
         cv2.imwrite(save_image_path, img)
 
         return (text, save_image_path)
+
+    return (text, None)
 
 
 def extract_number_plate_from_video_path(video_path: str) -> Optional[Tuple[str, str]]:
