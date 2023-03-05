@@ -48,37 +48,35 @@ The generated frame is first pre-processed with the following steps to attain a 
 <br>
 <br>
 
-The first step involved is - <br>
-
-    a. GAUSSIAN BLURRING: Blurring is implemented using Gaussian filters to smoothen out the image obtained. This is done to remove the salt and pepper noises present which can affect the detection algorithm. The blurring step removes any unnecessary contours that may be needed to be analyzed if passed onto the next step. Specifically, a Gaussian kernel (used for Gaussian blur) is a square array of pixels where the pixel values correspond to the values of a Gaussian curve (in 2D).Each pixel in the image gets multiplied by the Gaussian kernel. This is done by placing the centre pixel of the kernel on the image pixel and multiplying the values in the original image with the pixels in the kernel that overlap. The values resulting from these multiplications are added up and that result is used for the value at the destination pixel.
+a. GAUSSIAN BLURRING: Blurring is implemented using Gaussian filters to smoothen out the image obtained. This is done to remove the salt and pepper noises present which can affect the detection algorithm. The blurring step removes any unnecessary contours that may be needed to be analyzed if passed onto the next step. Specifically, a Gaussian kernel (used for Gaussian blur) is a square array of pixels where the pixel values correspond to the values of a Gaussian curve (in 2D).Each pixel in the image gets multiplied by the Gaussian kernel. This is done by placing the centre pixel of the kernel on the image pixel and multiplying the values in the original image with the pixels in the kernel that overlap. The values resulting from these multiplications are added up and that result is used for the value at the destination pixel.
 
 <p align="center"> <img src="./assets/gaussian_blurring.png"></img> <br>
 <b> Gaussian Blurring on the generated frame </b> </p>
 <br>
 <br>
 
-    b. GRAY SCALE CONVERSION- The edge detected image is converted to gray scale.
+b. GRAY SCALE CONVERSION- The edge detected image is converted to gray scale.
 
 <p align="center"> <img src="./assets/grayscale_converted_image.png"></img> <br>
 <b> Grayscale converted image of the frame </b> </p>
 <br>
 <br>
 
-    c. EDGE DETECTION- As the boundary of the license plate is a clearly defined boundary, edge detection can be used to obtain the same. Sobel mask using horizontal basis is used in the program. Edge detection works on the principles of high pass filters. The sharp transition in intensity of pixels on and around a boundary makes it to have high frequency properties which are passed by the edge detector whereas stopping the continuous intensity pixels.
+c. EDGE DETECTION- As the boundary of the license plate is a clearly defined boundary, edge detection can be used to obtain the same. Sobel mask using horizontal basis is used in the program. Edge detection works on the principles of high pass filters. The sharp transition in intensity of pixels on and around a boundary makes it to have high frequency properties which are passed by the edge detector whereas stopping the continuous intensity pixels.
 
 <p align="center"> <img src="./assets/sobel_edge_detected_output.png"></img> <br>
 <b> Sobel edge detected output of the frame </b> </p>
 <br>
 <br>
 
-    d. THRESHOLDING- The image is Thresholded into binary format using Otsu’s method of thresholding. Otsu's thresholding method involves iterating through all the possible threshold values and calculating a measure of spread for the pixel levels each side of the threshold, i.e. the pixels that either falls in foreground or background. The aim is to find the threshold value where the sum of foreground and background spreads is at its minimum. This is done by analyzing histograms for the background and foreground spread of the contending threshold values.
+d. THRESHOLDING- The image is Thresholded into binary format using Otsu’s method of thresholding. Otsu's thresholding method involves iterating through all the possible threshold values and calculating a measure of spread for the pixel levels each side of the threshold, i.e. the pixels that either falls in foreground or background. The aim is to find the threshold value where the sum of foreground and background spreads is at its minimum. This is done by analyzing histograms for the background and foreground spread of the contending threshold values.
 
 <p align="center"> <img src="./assets/thresholded_image.png"></img> <br>
 <b> Thresholded Image of the frame </b> </p>
 <br>
 <br>
 
-    e. MORPHOLOGICAL PROCESS- Dilation is applied on the threshold image with a structuring element of size 17x3. Dilation process widens the thickness of the boundary detected, i.e. Morphological dilation makes objects more visible and fills in small holes in objects. This makes it easier for us to handle the edges detected in the image which contains the license plate boundary.
+e. MORPHOLOGICAL PROCESS- Dilation is applied on the threshold image with a structuring element of size 17x3. Dilation process widens the thickness of the boundary detected, i.e. Morphological dilation makes objects more visible and fills in small holes in objects. This makes it easier for us to handle the edges detected in the image which contains the license plate boundary.
 
 <p align="center"> <img src="./assets/dilated_output.png"></img> <br>
 <b> Dilated output of the frame </b> </p>
